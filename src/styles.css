@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+body {
+  background-color: grey;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin: 10rem auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.head {
+  filter: blur(0.5px);
+  font-style: italic;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 10px 10px;
+}
+
+.lists {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.lists li {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  align-items: center;
+}
+
+input {
+  border: none;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+.addData {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+button {
+  border: none;
+  background-color: #fff;
+}
+
+.rowData {
+  display: flex;
+  gap: 10px;
+}
+
+.completed {
+  text-decoration: 2px line-through rgb(179, 255, 0);
+}
+
+.clear-btn {
+  padding: 21px 0;
+}
+
+.clear-btn:hover {
+  color: red;
+}
+
+.fa-trash {
+  color: red;
+}
+
+.fa-trash:hover {
+  cursor: pointer;
+}
+
+.fa-level-down-alt::before,
+.fa-turn-down::before {
+  color: lightgreen;
+}
+
+.fa-rotate::before,
+.fa-sync-alt::before {
+  color: lightblue;
+}
